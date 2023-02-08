@@ -160,6 +160,7 @@ obj-$(CONFIG_MTK_VOW_SUPPORT)  += vow/
 obj-y += io_boost/
 obj-y += mtprintk/
 ifneq ($(wildcard $(srctree)/drivers/misc/mediatek/met_drv/),)
+obj-y += met_drv_v2/
 obj-y += met_drv/
 endif
 obj-y += perf/
