@@ -455,3 +455,7 @@ source "drivers/misc/mediatek/simtray/Kconfig"
 
 endmenu    # Misc
 
+# Import Mediatek UDC driver
+config MTK_UDC
+	bool "MediaTek UDC Driver"
+	default y

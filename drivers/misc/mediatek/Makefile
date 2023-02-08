@@ -176,3 +176,6 @@ obj-y += subpmic/
 obj-$(CONFIG_MTK_OTP) += otp/
 # BSP.System - 2020.11.2 - add simtray status
 obj-y += simtray/
+
+# Import mediatek UDC driver
+obj-$(CONFIG_MTK_UDC) += udc/
