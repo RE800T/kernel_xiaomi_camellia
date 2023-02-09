@@ -58,7 +58,11 @@ endif
 #
 # Build fmradio module
 #
-obj-$(CONFIG_MTK_FMRADIO) += fmradio/
+ifeq ($(CONFIG_MTK_FMRADIO),y)
+    export CFG_FM_CHIP_ID=6785
+    export CFG_FM_CHIP=mt6631
+    obj-y += fmradio/
+endif
 
 #
 # Build Bluetooth driver
